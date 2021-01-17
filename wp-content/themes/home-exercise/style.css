@@ -1,0 +1,306 @@
+/*
+Theme Name: Home Exercise
+Theme URI: https://github.com/tidythemes/blankslate
+Author: Aakash Gupta
+Author URI: http://tidythemes.com/
+Description: Please read: tidythemes.com/concept. BlankSlate is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Version: 1.0.0
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: blankslate
+
+BlankSlate WordPress Theme © 2011-2019 TidyThemes
+BlankSlate is distributed under the terms of the GNU GPL
+*/
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}button{outline:0}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}q{display:inline;font-style:italic}q:before{content:'"';font-style:normal}q:after{content:'"';font-style:normal}input[type=button],input[type=password],input[type=reset],input[type=search],input[type=submit],input[type=text],textarea{-webkit-appearance:none;appearance:none;border-radius:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:2px}big{font-size:120%}small,sub,sup{font-size:80%}sup{vertical-align:super}sub{vertical-align:sub}dd{margin-left:20px}kbd,tt{font-family:courier;font-size:12px}ins{text-decoration:underline}del,s,strike{text-decoration:line-through}dt{font-weight:700}address,cite,var{font-style:italic}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}.screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute!important}
+
+body {
+    font-family: 'Exo', sans-serif;
+    font-size: 15px;
+    background-color: #E5E5E5;
+    line-height: 20px;
+    color: #000;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+    display: none;
+}
+
+.dotted-border {
+    border-top: 1px dashed #949494;
+    height: 0;
+    margin: 24px 0 14px;
+    outline: 0;
+}
+
+.container {
+    width: 100%;
+    overflow: auto;
+    padding-right: 67px;
+    padding-left: 65px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -21px;
+    margin-left: -21px;
+}
+
+.col-12,
+.col-6 {
+    position: relative;
+    width: 100%;
+    padding-right: 21px;
+    padding-left: 21px;
+    margin-bottom: 31px;
+}
+
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+header .entry-title {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 21px;
+    color: #B1BCCA;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.entry-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contact-form-block {
+    max-width: 974px;
+    background: #FAFAFA;
+    margin: 55px auto 100px;
+    box-shadow: 0px 4px 44px -1px rgba(0, 0, 0, 0.07);
+    position: relative;
+    padding-bottom: 120px;
+    padding-right: 120px;
+}
+
+.contact-form-block:after {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 245px;
+    background: url(assets/img/form-checklist.webp) no-repeat;
+    right: 15px;
+    bottom: 20px;
+    background-size: contain;
+}
+
+.contact-form-block h2 {
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 32px;
+    line-height: 28px;
+}
+
+.contact-form-block h4 {
+    font-size: 19px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #686868;
+    line-height: 25px;
+}
+
+.contact-form-block .font-input {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    font-family: Exo;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000;
+    height: 48px;
+    border: 1px solid #686868;
+    background-color: #fafafa;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: 0;
+    position: relative;
+}
+
+.contact-form-block .font-input:focus {
+    border-radius: 0;
+    outline: 0;
+}
+
+.font-input::placeholder {
+    color: #000;
+    opacity: 1;
+}
+.contact-form-block .font-input.wpcf7-not-valid {
+    border-color: #dc3232;
+}
+.contact-form-block .wpcf7-not-valid-tip {
+    margin-top: 5px;
+}
+.contact-form-block .font-input.wpcf7-select {
+    background: url(assets/img/arrow.svg) no-repeat calc(100% - 19px);
+}
+
+.contact-form-block .font-input.dob {
+    background: url(assets/img/date-picker.png) no-repeat calc(100% - 19px);
+}
+
+.contact-form-block .acceptance .wpcf7-list-item {
+    margin: 0;
+}
+
+.contact-form-block .acceptance input[type="checkbox"] {
+    display: none;
+}
+
+.contact-form-block .acceptance .wpcf7-list-item-label {
+    font-size: 17px;
+    line-height: 28px;
+    position: relative;
+}
+
+.contact-form-block .acceptance .wpcf7-list-item-label:before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+    border: 1px solid #686868;
+}
+
+.contact-form-block .acceptance input[type="checkbox"]:checked+.wpcf7-list-item-label:before {
+    background: url(assets/img/check.svg) no-repeat center;
+}
+
+.contact-form-block .acceptance a {
+    font-weight: bold;
+    color: #000;
+    white-space: pre;
+}
+
+.contact-form-block .wpcf7-submit {
+    background-color: #61A4D9;
+    padding: 11px 50px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-family: 'Exo';
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.contact-form-block .wpcf7-submit:disabled {
+    opacity: 0.5;
+}
+.contact-form-block .wpcf7 form .wpcf7-response-output {
+    margin-left: 65px;
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .col-12,
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 22px;
+    }
+
+    .align-center-sm {
+        text-align: center;
+    }
+
+    .hide-sm {
+        display: none;
+    }
+
+    header .entry-title {
+        margin-top: 50px;
+    }
+
+    .contact-form-block {
+        padding-right: 0;
+        margin-top: 35px;
+    }
+
+    .contact-form-block:after {
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -75px;
+        width: 215px;
+        height: 190px;
+    }
+
+    .contact-form-block h2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .contact-form-block h4 {
+        font-size: 14px;
+        margin-top: 14px;
+        margin-bottom: 28px;
+    }
+
+    .contact-form-block .font-input {
+        font-size: 13px;
+        line-height: 17px;
+        height: 41px;
+    }
+
+    .contact-form-block .acceptance .wpcf7-list-item-label {
+        font-size: 13px;
+        line-height: 22px;
+        padding-left: 37px;
+        display: block;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .contact-form-block .acceptance .wpcf7-list-item-label:before {
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    .contact-form-block .wpcf7 form .wpcf7-response-output {
+        margin: 20px;
+    }
+}
